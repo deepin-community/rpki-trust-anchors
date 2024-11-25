@@ -1,0 +1,70 @@
+#!/bin/sh -e
+
+. /usr/share/debconf/confmodule
+db_version 2.0
+
+is_tal() {
+  [ -e "$1" ] || return 1
+  head -1 "$1" | egrep -q '^[a-z]+://'
+}
+
+# Since there is no obvious way to determine if the currently installed TAL
+# is the most recent one without re-downloading it first, try to guess this
+# by checking if it has or not some feature which distinguishes from all
+# precedent TALs. Thank you ARIN for wasting my time.
+is_tal_current() {
+  [ -e "$1" ] || return 1
+
+  if head -2 "$1" | egrep -q '^https:'; then
+    return 0
+  fi
+
+  return 1
+}
+
+save_url() {
+  local url="$1"
+  local file="$2"
+
+  if which curl > /dev/null 2>&1; then
+    curl --silent --show-error --fail --ciphers DEFAULT@SECLEVEL=1 -o "$file" "$url"
+  elif which wget > /dev/null 2>&1; then
+    wget --no-verbose -O "$file.tmp" "$url"
+    mv "$file.tmp" "$file"
+  elif which GET > /dev/null 2>&1; then
+    GET "$url" > "$file.tmp"
+    mv "$file.tmp" "$file"
+  else
+    echo "curl or wget are not available! Cannot download $url!" >&2
+    return 1
+  fi
+}
+
+download_arin_tal() {
+  local update_tal=''
+
+  if ! is_tal_current /etc/tals/arin.tal; then
+    update_tal=1
+  fi
+
+  # do nothing if arin.tal contains a TAL
+  if [ -z "$update_tal" ] && is_tal /etc/tals/arin.tal; then
+    return
+  fi
+
+  db_get rpki-trust-anchors/get_arin_tal
+  [ "$RET" = 'true' ] || return 0
+
+  if ! save_url https://www.arin.net/resources/manage/rpki/arin.tal /etc/tals/arin.tal; then
+    echo "Cannot download the ARIN TAL!" >&2
+    exit 1
+  fi
+}
+
+case "$1" in
+configure)
+  download_arin_tal "$@"
+  ;;
+esac
+
+#DEBHELPER#

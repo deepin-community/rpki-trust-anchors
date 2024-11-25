@@ -1,5 +1,70 @@
-template-repository (1.0-1) unstable; urgency=medium
+rpki-trust-anchors (20210817-2) unstable; urgency=medium
 
-  * Initial release
+  * Added a debconf translation: pt_BR. (Closes: #1025728)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Marco d'Itri <md@linux.it>  Mon, 23 Jan 2023 13:30:44 +0100
+
+rpki-trust-anchors (20210817-1) unstable; urgency=medium
+
+  * Added the https URL to the LACNIC TAL.
+
+ -- Marco d'Itri <md@linux.it>  Tue, 17 Aug 2021 01:03:51 +0200
+
+rpki-trust-anchors (20210417-1) unstable; urgency=medium
+
+  * Updated the https URL for the APNIC TAL.
+
+ -- Marco d'Itri <md@linux.it>  Sat, 17 Apr 2021 11:55:56 +0200
+
+rpki-trust-anchors (20200621-2) unstable; urgency=medium
+
+  * Added a debconf translation: pt. (Closes: #982337)
+
+ -- Marco d'Itri <md@linux.it>  Sun, 28 Mar 2021 00:30:51 +0100
+
+rpki-trust-anchors (20200621-1) unstable; urgency=high
+
+  * Fixed the https URL of the APNIC TAL. (Closes: #963268)
+
+ -- Marco d'Itri <md@linux.it>  Sun, 21 Jun 2020 19:13:33 +0200
+
+rpki-trust-anchors (20200610-1) unstable; urgency=medium
+
+  * Added the https URL to the APNIC TAL.
+  * Added the https URL to the RIPE TAL.
+  * Updated the URL of the ARIN TAL.
+  * Updated postinst to try to guess if the ARIN TAL is out of date.
+
+ -- Marco d'Itri <md@linux.it>  Wed, 10 Jun 2020 06:20:52 +0200
+
+rpki-trust-anchors (20200517-1) unstable; urgency=medium
+
+  * Added the https URL to the Afrinic TAL.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 17 May 2020 13:27:55 +0200
+
+rpki-trust-anchors (20191019-4) unstable; urgency=medium
+
+  * Added some debconf translations: de, fr, nl, it.
+    (Closes: #944847, #946008, #946622)
+
+ -- Marco d'Itri <md@linux.it>  Sat, 14 Dec 2019 18:17:57 +0100
+
+rpki-trust-anchors (20191019-3) unstable; urgency=medium
+
+  * Make postrm not fail if /etc/tals/ is missing: this happens if the
+    ARIN certificate was not installed. (Closes: #944305)
+
+ -- Marco d'Itri <md@linux.it>  Thu, 07 Nov 2019 15:52:55 +0100
+
+rpki-trust-anchors (20191019-2) unstable; urgency=medium
+
+  * Identical source-only upload for the benefit of buildds.
+
+ -- Marco d'Itri <md@linux.it>  Wed, 06 Nov 2019 16:59:05 +0100
+
+rpki-trust-anchors (20191019-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 20 Oct 2019 23:15:40 +0200

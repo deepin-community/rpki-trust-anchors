@@ -1,0 +1,46 @@
+# Translation of rpki-trust-anchors debconf templates to French
+# Copyright (C) 2019 French l10n team <debian-l10n-french@lists.debian.org>
+# This file is distributed under the same license as the rpki-trust-anchors package.
+# Grégoire Scano <gregoire.scano@malloc.fr>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: rpki-trust-anchors_20191019-3\n"
+"Report-Msgid-Bugs-To: rpki-trust-anchors@packages.debian.org\n"
+"POT-Creation-Date: 2019-10-19 22:10+0200\n"
+"PO-Revision-Date: 2019-12-12 11:07+0800\n"
+"Last-Translator: Grégoire Scano <gregoire.scano@malloc.fr>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid "Do you accept the ARIN Relying Party Agreement (RPA)?"
+msgstr "Acceptez-vous les conditions générales d'utilisation (RPA) d'ARIN ?"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"ARIN forbids third parties from distributing the Trust Anchor Locator (TAL) "
+"for their RPKI repository, hence this package can download it only if you "
+"will agree to ARIN's conditions."
+msgstr ""
+"ARIN interdit à des tierces parties de distribuer le Trust Anchor Locator "
+"(TAL) pour leur dépôt RPKI. Ce paquet ne pourra le télécharger qu'à la "
+"condition que vous acceptiez les conditions d'ARIN."
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"If you want that this package automatically download and installs the ARIN "
+"TAL, then you need to accept the ARIN Relying Party Agreement (RPA): https://"
+"www.arin.net/resources/manage/rpki/rpa.pdf ."
+msgstr ""
+"Si vous souhaitez que ce paquet télécharge et installe de façon automatique "
+"le TAL d'ARIN, vous devez accepter les conditions générales d'utilisation "
+"(RPA) d'ARIN : https://www.arin.net/resources/manage/rpki/rpa.pdf ."

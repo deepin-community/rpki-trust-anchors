@@ -1,0 +1,49 @@
+# Translation of rpki-trust-anchors debconf messages to European Portuguese.
+# Copyright (C) 2021 THE rpki-trust-anchors'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the rpki-trust-anchors package.
+# Américo Monteiro <a_monteiro@gmx.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rpki-trust-anchors_20200621-1\n"
+"Report-Msgid-Bugs-To: rpki-trust-anchors@packages.debian.org\n"
+"POT-Creation-Date: 2019-12-14 17:54+0100\n"
+"PO-Revision-Date: 2021-02-08 23:33+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language-Team: Portuguese <>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid "Do you accept the ARIN Relying Party Agreement (RPA)?"
+msgstr "Você aceita o Acordo ARIN Relying Party Agreement (RPA)?"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"ARIN forbids third parties from distributing the Trust Anchor Locator (TAL) "
+"for their RPKI repository, hence this package can download it only if you "
+"will agree to ARIN's conditions."
+msgstr ""
+"ARIN proíbe terceiros de distribuir o Trust Anchor Locator (TAL) para os "
+"seus repositórios RPKI, por isso este pacote apenas o pode descarregar se "
+"você concordar com as condições do ARIN."
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"If you want that this package automatically download and installs the ARIN "
+"TAL, then you need to accept the ARIN Relying Party Agreement (RPA): https://"
+"www.arin.net/resources/manage/rpki/rpa.pdf ."
+msgstr ""
+"Se você quiser isso, este pacote descarrega e instala automaticamente o "
+"ARIN TAL, depois você precisa de aceitar o acordo ARIN Relying Party "
+"Agreement (RPA): https://www.arin.net/resources/manage/rpki/rpa.pdf ."
