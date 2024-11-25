@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+if [ "$1" = purge ]; then
+  rm -f /etc/tals/arin.tal
+  if [ -d /etc/tals/ ]; then
+    rmdir --ignore-fail-on-non-empty /etc/tals/
+  fi
+fi
+
+#DEBHELPER#

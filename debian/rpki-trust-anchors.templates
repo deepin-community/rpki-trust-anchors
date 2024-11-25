@@ -1,0 +1,10 @@
+Template: rpki-trust-anchors/get_arin_tal
+Type: boolean
+_Description: Do you accept the ARIN Relying Party Agreement (RPA)?
+ ARIN forbids third parties from distributing the Trust Anchor Locator (TAL)
+ for their RPKI repository, hence this package can download it only if
+ you will agree to ARIN's conditions.
+ .
+ If you want that this package automatically download and installs the ARIN
+ TAL, then you need to accept the ARIN Relying Party Agreement (RPA):
+ https://www.arin.net/resources/manage/rpki/rpa.pdf .

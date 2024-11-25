@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the rpki-trust-anchors package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rpki-trust-anchors\n"
+"Report-Msgid-Bugs-To: rpki-trust-anchors@packages.debian.org\n"
+"POT-Creation-Date: 2019-10-19 22:10+0200\n"
+"PO-Revision-Date: 2019-11-12 15:17+0100\n"
+"Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
+"Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid "Do you accept the ARIN Relying Party Agreement (RPA)?"
+msgstr ""
+"Aanvaardt u de ARIN Relying Party Agreement (RPA - Vertrouwende Partij "
+"Overeenkomst)?"
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"ARIN forbids third parties from distributing the Trust Anchor Locator (TAL) "
+"for their RPKI repository, hence this package can download it only if you "
+"will agree to ARIN's conditions."
+msgstr ""
+"ARIN verbiedt derden de Trust Anchor Locator (TAL) voor hun RPKI-"
+"opslagplaats te verspreiden. Daarom kan dit pakket deze enkel downloaden "
+"indien u zich akkoord verklaart met de voorwaarden van ARIN."
+
+#. Type: boolean
+#. Description
+#: ../rpki-trust-anchors.templates:1001
+msgid ""
+"If you want that this package automatically download and installs the ARIN "
+"TAL, then you need to accept the ARIN Relying Party Agreement (RPA): https://"
+"www.arin.net/resources/manage/rpki/rpa.pdf ."
+msgstr ""
+"Indien u wenst dat dit pakket automatisch de ARIN TAL downloadt en "
+"installeert, dan moet u de ARIN Relying Party Agreement (RPA) aanvaarden: "
+"https://www.arin.net/resources/manage/rpki/rpa.pdf ."
